@@ -14,7 +14,7 @@ nltk.download('punkt')
 nltk.download('stopwords')
 
 # Load the CSV file
-df = pd.read_csv('C:\\Users\\Lenovo\\Downloads\\mentfaq\\Mental_Health_FAQ.csv')
+df = pd.read_csv('model\\Mental_Health_FAQ.csv')
 
 # Preprocess function
 def preprocess_text(text):

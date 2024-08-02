@@ -1,23 +1,4 @@
-'''import h5py
 
-# Open the HDF5 file
-file_path = '/path/to/your/file.h5'  # Replace with your file path
-with h5py.File(file_path, 'r') as hdf:
-    # List all groups
-    print("Keys: %s" % hdf.keys())
-    # Get the first group name
-    a_group_key = list(hdf.keys())[0]
-
-    # Get the group object
-    group = hdf[a_group_key]
-
-    # List all datasets in the group
-    print("Datasets: %s" % group.keys())
-
-    # Read a dataset
-    data = group['dataset_name'][:]  # Replace 'dataset_name' with the actual dataset name
-    print(data)
-'''
 import nltk
 import re
 import random
@@ -34,7 +15,7 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 # Constants
-path_to_csv = 'C:\\Users\\Lenovo\\Downloads\\mentfaq\\Mental_Health_FAQ.csv'
+path_to_csv = 'model\\Mental_Health_FAQ.csv'
 dimensionality = 128  # Reduced dimensionality
 batch_size = 32   # Increased batch size
 epochs = 800  # Reduced epochs
